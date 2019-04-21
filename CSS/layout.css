@@ -1,0 +1,233 @@
+/* Universal Styles */
+html {
+    font-size: 16px;
+  }
+
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.image-container img {
+  overflow: hidden;
+  max-width: 80%;
+  
+}
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 1px solid #eaeaea;
+  color: #333;
+  text-shadow: none;
+  background-color: #f8f8f8;
+  font-size: 0.875rem;
+  color: #777;
+  width: 40%;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+  border: 1px solid #fbd1d5;
+}
+/* End of Universal Styles */
+
+/* Header Section */
+header {
+  padding: 10px 0;
+}
+
+header .row {
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  }
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+header a {
+  color: black;
+  text-decoration: none;;
+}
+
+header a:hover {
+  color: #fbd1d5;
+  text-decoration: none;
+}
+
+/* End of Header Section */
+
+/* Jumbotron */
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('./img/jumbotron.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 400px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 1.25rem;
+  color: #fff;
+}
+
+.btn.btn-jumbotron {
+  border-radius: 2px;
+  border: 0px;
+  color: #333;
+  text-shadow: none;
+  background-color: #ffffff;
+  font-size: 0.875rem;
+}
+
+.btn.btn-jumbotron:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+/* End of Jumbotron */
+
+/* Main Content */
+/* Side Navigation Bar */
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+.sidebar-nav .navbar li a:hover {
+  background-color: #fbd1d5;
+}
+/* End of Side Nav */
+
+/* Blog */
+.blog {
+  margin: auto;
+  align-items: center;
+  width: 62%;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.8;
+  color: #444444;
+}
+
+article {
+  margin-bottom: 15%;
+}
+
+article h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #fbd1d5;
+}
+
+article h4 {
+  font-size: 1.125rem;
+  color: #999999;
+}
+
+article h4 a {
+  text-decoration: none;
+  color: #444444;
+}
+
+article h4 a:hover {
+  text-decoration: none;
+  color: #fbd1d5;
+}
+
+.key-line {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* End of Blog */
+
+/* Sign-Up Form */
+.form-group p {
+  color: grey;
+}
+
+.form-control {
+  font-size: 1rem;
+}
+.form-buttons button {
+  margin-right: 10px;
+  width: 40%;
+}
+/* End of Sign-Up Form */
+/* End of Main Content */
+
+/* Footer */
+footer {
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+/* End of Footer */
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 992px) { 
+  .blog {
+    width: 80%;
+  }
+/* End of Tablet View Query  */
+
+/* Smart Phone View */
+@media (max-width: 768px) {
+  html {
+    font-size: 26px;
+  }
+  header .row {
+  display: block;
+}
+  header nav {
+  display: block;
+  }
+  .blog {
+    width: auto;
+  }
+}
+/* End of Smart Phone View Query */
